@@ -1,0 +1,334 @@
+"Phrases"
+{
+	//////////////////////
+	////////Menu//////////
+	//////////////////////
+	"MainTitle"
+	{
+		"ru"	"Дуэль 1x1"
+		"ua"	"Дуель 1x1"
+		"en"	"1v1 Duel"
+	}
+	"MenuChallenge"
+	{
+		"ru"	"Вызвать на дуэль"
+		"ua"	"Викликати на дуель"
+		"en"	"Challenge to a duel"
+	}
+	"MenuSettings"
+	{
+		"ru"	"Автопринятие"
+		"ua"	"Автоприйняття"
+		"en"	"Auto-accept"
+	}
+	"MenuCancel"
+	{
+		"ru"	"Отменить вызов/дуэль"
+		"ua"	"Скасувати виклик/дуель"
+		"en"	"Cancel challenge/duel"
+	}
+	"MenuStatusInDuel"
+	{
+		"ru"	"Вы сейчас в дуэли"
+		"ua"	"Ви зараз у дуелі"
+		"en"	"You are currently in a duel"
+	}
+	"MenuStatusPending"
+	{
+		"ru"	"Ожидание ответа..."
+		"ua"	"Очікування відповіді..."
+		"en"	"Waiting for a response..."
+	}
+	"NoTargets"
+	{
+		"ru"	"Нет доступных игроков для вызова"
+		"ua"	"Немає доступних гравців для виклику"
+		"en"	"No players available to challenge"
+	}
+	"TargetTitle"
+	{
+		"ru"	"Выберите соперника"
+		"ua"	"Оберіть суперника"
+		"en"	"Select an opponent"
+	}
+	"WeaponTitle"
+	{
+		"ru"	"Выберите оружие"
+		"ua"	"Оберіть зброю"
+		"en"	"Select a weapon"
+	}
+	"WeaponRandom"
+	{
+		"ru"	"Случайное оружие"
+		"ua"	"Випадкова зброя"
+		"en"	"Random weapon"
+	}
+	"ArenaTitle"
+	{
+		"ru"	"Выберите арену"
+		"ua"	"Оберіть арену"
+		"en"	"Select an arena"
+	}
+	"ArenaRandom"
+	{
+		"ru"	"Случайная арена"
+		"ua"	"Випадкова арена"
+		"en"	"Random arena"
+	}
+	"ResponseTitle"
+	{
+		"ru"	"Вызов на дуэль"
+		"ua"	"Виклик на дуель"
+		"en"	"Duel challenge"
+	}
+	"ResponseInfo"
+	{
+		"ru"	"%s вызывает вас на дуэль"
+		"ua"	"%s викликає вас на дуель"
+		"en"	"%s is challenging you to a duel"
+	}
+	"Accept"
+	{
+		"ru"	"Принять"
+		"ua"	"Прийняти"
+		"en"	"Accept"
+	}
+	"Decline"
+	{
+		"ru"	"Отклонить"
+		"ua"	"Відхилити"
+		"en"	"Decline"
+	}
+	"SettingsTitle"
+	{
+		"ru"	"Настройки автопринятия"
+		"ua"	"Налаштування автоприйняття"
+		"en"	"Auto-accept settings"
+	}
+	"ModeManual"
+	{
+		"ru"	"Режим: Вручную"
+		"ua"	"Режим: Вручну"
+		"en"	"Mode: Manual"
+	}
+	"ModeAlways"
+	{
+		"ru"	"Режим: Всегда принимать"
+		"ua"	"Режим: Завжди приймати"
+		"en"	"Mode: Always accept"
+	}
+	"ModeWhitelist"
+	{
+		"ru"	"Режим: Только из белого списка"
+		"ua"	"Режим: Тільки з білого списку"
+		"en"	"Mode: Whitelist only"
+	}
+	"ModeHealth"
+	{
+		"ru"	"Режим: По здоровью"
+		"ua"	"Режим: За здоров'ям"
+		"en"	"Mode: By health"
+	}
+	"ModeNever"
+	{
+		"ru"	"Режим: Никогда"
+		"ua"	"Режим: Ніколи"
+		"en"	"Mode: Never"
+	}
+	"HealthThresholdTitle"
+	{
+		"ru"	"Порог здоровья для автопринятия"
+		"ua"	"Поріг здоров'я для автоприйняття"
+		"en"	"Health threshold for auto-accept"
+	}
+	"WhitelistTitle"
+	{
+		"ru"	"Белый список автопринятия"
+		"ua"	"Білий список автоприйняття"
+		"en"	"Auto-accept whitelist"
+	}
+	"WhitelistAdd"
+	{
+		"ru"	"Добавить: %s"
+		"ua"	"Додати: %s"
+		"en"	"Add: %s"
+	}
+	"WhitelistRemove"
+	{
+		"ru"	"Удалить: %s"
+		"ua"	"Видалити: %s"
+		"en"	"Remove: %s"
+	}
+	"CancelConfirmTitle"
+	{
+		"ru"	"Точно отменить?"
+		"ua"	"Дійсно скасувати?"
+		"en"	"Are you sure?"
+	}
+	"CancelConfirmYes"
+	{
+		"ru"	"Да, отменить"
+		"ua"	"Так, скасувати"
+		"en"	"Yes, cancel"
+	}
+	"CancelConfirmNo"
+	{
+		"ru"	"Нет"
+		"ua"	"Ні"
+		"en"	"No"
+	}
+
+	//////////////////////
+	////////Chat//////////
+	//////////////////////
+	"ChallengeSent"
+	{
+		"ru"	"Вы вызвали %s на дуэль. Бой начнётся после окончания раунда."
+		"ua"	"Ви викликали %s на дуель. Бій розпочнеться після завершення раунду."
+		"en"	"You challenged %s to a duel. It will start after the round ends."
+	}
+	"ChallengeReceived"
+	{
+		"ru"	"%s вызывает вас на дуэль! Откройте меню дуэлей, чтобы ответить."
+		"ua"	"%s викликає вас на дуель! Відкрийте меню дуелей, щоб відповісти."
+		"en"	"%s is challenging you to a duel! Open the duel menu to respond."
+	}
+	"ChallengeAutoAccepted"
+	{
+		"ru"	"%s автоматически принял(а) ваш вызов."
+		"ua"	"%s автоматично прийняв(ла) ваш виклик."
+		"en"	"%s auto-accepted your challenge."
+	}
+	"ChallengeAccepted"
+	{
+		"ru"	"%s принял(а) ваш вызов! Бой начнётся после окончания раунда."
+		"ua"	"%s прийняв(ла) ваш виклик! Бій розпочнеться після завершення раунду."
+		"en"	"%s accepted your challenge! It will start after the round ends."
+	}
+	"ChallengeDeclined"
+	{
+		"ru"	"%s отклонил(а) ваш вызов."
+		"ua"	"%s відхилив(ла) ваш виклик."
+		"en"	"%s declined your challenge."
+	}
+	"ChallengeDeclinedSelf"
+	{
+		"ru"	"Вы отклонили вызов от %s."
+		"ua"	"Ви відхилили виклик від %s."
+		"en"	"You declined the challenge from %s."
+	}
+	"ChallengeCancelled"
+	{
+		"ru"	"Вызов на дуэль отменён."
+		"ua"	"Виклик на дуель скасовано."
+		"en"	"The duel challenge has been cancelled."
+	}
+	"ChallengeCancelledByOpponent"
+	{
+		"ru"	"%s отменил(а) вызов на дуэль."
+		"ua"	"%s скасував(ла) виклик на дуель."
+		"en"	"%s cancelled the duel challenge."
+	}
+	"ErrorSelfChallenge"
+	{
+		"ru"	"Нельзя вызвать самого себя."
+		"ua"	"Не можна викликати самого себе."
+		"en"	"You can't challenge yourself."
+	}
+	"ErrorTargetNotEligible"
+	{
+		"ru"	"Этот игрок сейчас недоступен для дуэли."
+		"ua"	"Цей гравець зараз недоступний для дуелі."
+		"en"	"That player is not available for a duel right now."
+	}
+	"ErrorAlreadyPending"
+	{
+		"ru"	"У вас уже есть незавершённый вызов или дуэль."
+		"ua"	"У вас вже є незавершений виклик або дуель."
+		"en"	"You already have a pending challenge or duel."
+	}
+	"ErrorNotEligible"
+	{
+		"ru"	"Вы не можете сейчас участвовать в дуэли."
+		"ua"	"Ви не можете зараз брати участь у дуелі."
+		"en"	"You can't take part in a duel right now."
+	}
+	"ErrorNoWeapons"
+	{
+		"ru"	"Нет доступного оружия для дуэлей."
+		"ua"	"Немає доступної зброї для дуелей."
+		"en"	"No weapons available for duels."
+	}
+	"ErrorNoArenas"
+	{
+		"ru"	"Нет доступных арен для дуэлей."
+		"ua"	"Немає доступних арен для дуелей."
+		"en"	"No arenas available for duels."
+	}
+	"NothingToCancel"
+	{
+		"ru"	"У вас нет активных вызовов или дуэлей."
+		"ua"	"У вас немає активних викликів або дуелей."
+		"en"	"You have no active challenges or duels."
+	}
+	"DuelQueued"
+	{
+		"ru"	"Дуэль между %s и %s начнётся после окончания раунда."
+		"ua"	"Дуель між %s та %s розпочнеться після завершення раунду."
+		"en"	"The duel between %s and %s will start after the round ends."
+	}
+	"PrepCountdown"
+	{
+		"ru"	"Дуэль начнётся через %d..."
+		"ua"	"Дуель розпочнеться через %d..."
+		"en"	"The duel starts in %d..."
+	}
+	"DuelStart"
+	{
+		"ru"	"Бой начался! Оружие: %s"
+		"ua"	"Бій розпочався! Зброя: %s"
+		"en"	"Fight! Weapon: %s"
+	}
+	"DuelWin"
+	{
+		"ru"	"Вы победили в дуэли против %s!"
+		"ua"	"Ви перемогли у дуелі проти %s!"
+		"en"	"You won the duel against %s!"
+	}
+	"DuelLose"
+	{
+		"ru"	"Вы проиграли дуэль против %s."
+		"ua"	"Ви програли дуель проти %s."
+		"en"	"You lost the duel against %s."
+	}
+	"DuelDraw"
+	{
+		"ru"	"Дуэль с %s завершилась вничью."
+		"ua"	"Дуель з %s завершилася внічию."
+		"en"	"The duel with %s ended in a draw."
+	}
+	"DuelAbortedPrep"
+	{
+		"ru"	"Дуэль отменена: игрок погиб во время подготовки."
+		"ua"	"Дуель скасована: гравець загинув під час підготовки."
+		"en"	"Duel aborted: a player died during preparation."
+	}
+	"DuelForcedByRound"
+	{
+		"ru"	"Дуэль прервана началом нового раунда."
+		"ua"	"Дуель перервана початком нового раунду."
+		"en"	"The duel was interrupted by the start of a new round."
+	}
+	"DuelOpponentDisconnected"
+	{
+		"ru"	"Ваш соперник покинул сервер. Победа засчитана вам."
+		"ua"	"Ваш суперник покинув сервер. Перемогу зараховано вам."
+		"en"	"Your opponent left the server. You win by default."
+	}
+	"DuelForceEndedAdmin"
+	{
+		"ru"	"Дуэль остановлена."
+		"ua"	"Дуель зупинено."
+		"en"	"The duel has been stopped."
+	}
+}
