@@ -37,7 +37,18 @@ jobs:
           mkdir external
           cd external
           git clone --recursive --branch master --single-branch https://github.com/alliedmodders/metamod-source.git
-          git clone --recursive --branch cs2 --single-branch https://github.com/alliedmodders/hl2sdk.git hl2sdk-cs2
+          # Pin to a commit close to SchemaEntity's last update instead of tracking the
+          # cs2 branch HEAD: SchemaEntity's schema headers (Ray_t, HitGroup_t,
+          # NetworkStateChanged_t, etc.) don't track upstream hl2sdk-cs2 renames/refactors,
+          # so building against the latest SDK breaks with undeclared-identifier errors.
+          mkdir hl2sdk-cs2
+          cd hl2sdk-cs2
+          git init -q
+          git remote add origin https://github.com/alliedmodders/hl2sdk.git
+          git fetch --depth 1 origin 0c70f44f110e3eb7e2358af156d5bedfd7198ef0
+          git checkout -q FETCH_HEAD
+          git submodule update --init --recursive
+          cd ..
           cd ../..
           git clone https://github.com/pisex/SchemaEntity.git
           cd ${{ github.workspace }}
