@@ -261,13 +261,19 @@ class MMSPluginConfig(object):
     cxx.defines += ['META_IS_SOURCE2']
     binary.sources += [
       os.path.join(sdk['path'], 'public', 'tier0', 'memoverride.cpp'),
-      os.path.join(sdk['path'], 'tier1', 'generichash.cpp'),
       os.path.join(sdk['path'], 'entity2', 'entitysystem.cpp'),
       os.path.join(sdk['path'], 'entity2', 'entityidentity.cpp'),
       os.path.join(sdk['path'], 'entity2', 'entitykeyvalues.cpp'),
       os.path.join(sdk['path'], 'tier1', 'convar.cpp'),
       os.path.join(sdk['path'], 'tier1', 'keyvalues3.cpp'),
     ]
+
+    # generichash.cpp was removed from some newer hl2sdk-cs2 revisions (the
+    # function now lives header-only in generichash.h); only add it if this
+    # SDK checkout still ships the source file.
+    generichash_cpp = os.path.join(sdk['path'], 'tier1', 'generichash.cpp')
+    if os.path.exists(generichash_cpp):
+      binary.sources += [generichash_cpp]
 
     SdkHelpers.configureCxx(context, binary, sdk)
 
