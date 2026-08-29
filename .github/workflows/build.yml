@@ -50,7 +50,6 @@ jobs:
           git submodule update --init --recursive
           cd ..
           cd ../..
-          git clone https://github.com/pisex/SchemaEntity.git
           cd ${{ github.workspace }}
 
       - name: Configure and build plugin

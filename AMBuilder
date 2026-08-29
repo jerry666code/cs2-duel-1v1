@@ -6,6 +6,14 @@ import os
 # which in the end would ruin the multi-platform (unix, win etc) loading by metamod as it won't be able to append platform specific extension
 # so just fall back to the single binary.
 # Multi-sdk solutions should be manually loaded with a custom plugin loader (examples being sourcemod, stripper:source)
+# Prefer a SchemaEntity copy vendored directly inside this plugin (self-contained,
+# reproducible CI builds); fall back to the shared sibling checkout used by the
+# other plugins in this repo for local dev if the vendored copy isn't present.
+if os.path.isdir(os.path.join(builder.sourcePath, 'SchemaEntity')):
+    schema_entity_dir = 'SchemaEntity'
+else:
+    schema_entity_dir = os.path.join('..', 'SchemaEntity')
+
 for sdk_target in MMSPlugin.sdk_targets:
     sdk = sdk_target.sdk
     cxx = sdk_target.cxx
@@ -20,7 +28,7 @@ for sdk_target in MMSPlugin.sdk_targets:
 
     binary.compiler.cxxincludes += [
       os.path.join(builder.sourcePath, 'include'),
-      os.path.join(builder.sourcePath, '..', 'SchemaEntity'),
+      os.path.join(builder.sourcePath, schema_entity_dir),
     ]
 
     binary.sources += [
@@ -28,9 +36,9 @@ for sdk_target in MMSPlugin.sdk_targets:
       'duel_config.cpp',
       'duel_menu.cpp',
       'duel_manager.cpp',
-      os.path.join('..', 'SchemaEntity', 'schemasystem.cpp'),
-      os.path.join('..', 'SchemaEntity', 'module.cpp'),
-      os.path.join('..', 'SchemaEntity', 'ctimer.cpp'),
+      os.path.join(schema_entity_dir, 'schemasystem.cpp'),
+      os.path.join(schema_entity_dir, 'module.cpp'),
+      os.path.join(schema_entity_dir, 'ctimer.cpp'),
     ]
 
     if cxx.target.arch == 'x86':
